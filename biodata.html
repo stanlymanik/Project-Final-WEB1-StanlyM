@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Mahasiswa</title>
+    <link rel="icon" type="image/x-icon" href="logo baru.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hero-section {
+            background-color: #0D274D;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .biodata-container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .biodata-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .biodata-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: auto;
+        }
+
+        nav a {
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0D274D;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-gray-800">Biodata Mahasiswa</h1>
+            <nav class="flex space-x-6">
+                <a href="index.html" class="text-gray-700">Home</a>
+                <a href="biodata.html" class="text-gray-700">Biodata</a>
+                <a href="contact_us.html" class="text-gray-700">Contact Us</a>
+                <a href="posts.html" class="text-gray-700">Post</a>
+                <a href="freepage.html" class="text-gray-700">Map</a>ct Us</a>
+                <a href="posts.html" class="text-gray-700 hover:text-blue-500">Video</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold">Get to know you better</h1>
+            <p class="text-lg mt-2">My personal information and experience</p>
+        </div>
+    </section>
+
+    <!-- Biodata Section -->
+    <section class="py-8">
+        <div class="biodata-container">
+            <!-- Photo -->
+            <div class="biodata-header">
+                <img src="my PHOTO.jpeg" alt="Foto Mahasiswa" class="biodata-image">
+                <h2 class="text-2xl font-bold mt-4">Nama Anda</h2>
+            </div>
+
+            <!-- Personal Information -->
+            <div class="text-gray-700">
+                <p><strong>Nomor Induk Mahasiswa (NIM):</strong>2381007</p>
+                <p><strong>Fakultas:</strong> Teknologi Informasi</p>
+                <p><strong>Hobi:</strong> Basketball, Yarn, Singing</p>
+                <p><strong>Keterampilan:</strong> music</p>
+            </div>
+
+            <!-- Testimonial -->
+            <div class="mt-6">
+                <h3 class="text-xl font-semibold">Testimonial</h3>
+                <p class="text-gray-600 mt-2">
+                    I really enjoyed learning in the web programming class. One of the most valuable things is the understanding of responsive design concepts and how technology can help create useful solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>© 2024 -Harry Stanly Manik</p>
+    </footer>
+</body>
+</html>

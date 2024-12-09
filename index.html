@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cisco | Making AI work for you</title>
+    <link rel="icon" type="image/x-icon" href="logo baru.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=CiscoSans:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'CiscoSans', sans-serif;
+        }
+
+        .hero-section {
+            background-color: #0D274D;
+            min-height: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('data-stream.svg') no-repeat center;
+            background-size: cover;
+        }
+
+        .cisco-button {
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 100px;
+            padding: 8px 24px;
+            transition: all 0.3s ease;
+        }
+
+        .cisco-button:hover {
+            background-color: white;
+            color: #0D274D;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white z-50">
+        <div class="border-b">
+            <div class="container mx-auto px-4 py-2 flex justify-end text-sm">
+                <a href="https://unai.edu/" class="text-gray-600 mx-3">Website UNAI</a>
+                <a href="https://fti.unai.edu/" class="text-gray-600 mx-3">FTI UNAI</a>
+                <a href="#" class="text-gray-600 mx-3">Log in</a>
+                <a href="#" class="text-gray-600 mx-3">EN US</a>
+            </div>
+        </div>
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <img src="ciscologo.png" alt="Cisco Logo" class="h-8">
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700">Home</a>
+                    <a href="biodata.html" class="text-gray-700">Biodata</a>
+                    <a href="contact_us.html" class="text-gray-700">Contact Us</a>
+                    <a href="posts.html" class="text-gray-700">Post</a>
+                    <a href="freepage.html" class="text-gray-700">Video</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="text-blue-500 border border-blue-500 rounded-full px-4 py-1">Trials and demos</button>
+                    <button class="text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative">
+        <div class="hero-image absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('welcome.jpg')">
+            <!-- Optional: Tambahkan overlay gelap -->
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="pt-48 pb-32 text-white max-w-3xl">
+                <h1 class="text-5xl font-light mb-6">Making AI work for you</h1>
+                <p class="text-xl mb-8">Cisco AI is where the AI hype ends and meaningful help begins.</p>
+                <button class="cisco-button">Explore Cisco AI</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="bg-white py-8 border-t">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-6 gap-4 text-center">
+                <div class="flex flex-col items-center">
+                    <img src="icon_downloads.jpg" alt="Downloads" class="w-8 mb-2">
+                    <span class="text-sm">Downloads</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="icon_certifications.jpg" alt="Certifications" class="w-8 mb-2">
+                    <span class="text-sm">Certifications</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="icon_design-guides.jpg" alt="Cisco Validated" class="w-8 mb-2">
+                    <span class="text-sm">Cisco Validated</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="icon_training.jpg" alt="Training" class="w-8 mb-2">
+                    <span class="text-sm">Training</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="icon_certifications.jpg" alt="Community" class="w-8 mb-2">
+                    <span class="text-sm">Community</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="icon_support.jpg" alt="Support" class="w-8 mb-2">
+                    <span class="text-sm">Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+    <!-- Latest Products Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl mb-8">Latest products and innovations across Cisco</h2>
+            
+            <!-- Top Products Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Cisco Wireless -->
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <img src="homepage-featured-story.jpg" alt="Cisco Wireless" class="w-full mb-4">
+                    <h3 class="font-semibold mb-2">Cisco wireless</h3>
+                    <p class="text-sm text-gray-600 mb-4">Discover high-density campus networks with Wi-Fi 7 innovations</p>
+                    <a href="#" class="text-blue-500 text-sm">Explore Wi-Fi 7</a>
+                </div>
+
+                <!-- Zero Trust Access -->
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <img src="hp-feature-3-userprotection.jpg" alt="Zero Trust Access" class="w-full mb-4">
+                    <h3 class="font-semibold mb-2">Zero Trust Access</h3>
+                    <p class="text-sm text-gray-600 mb-4">Use security to deliver hybrid work clarity. Zero Trust access helps your teams stay productive.</p>
+                    <a href="#" class="text-blue-500 text-sm">Explore Zero Trust Access</a>
+                </div>
+
+                <!-- Secure Firewall -->
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <img src="hp-featured-firewall.jpg" alt="Secure Firewall" class="w-full mb-4">
+                    <h3 class="font-semibold mb-2">Secure Firewall 3100 Series</h3>hh
+                    <p class="text-sm text-gray-600 mb-4">Protect your hybrid work environment</p>
+                    <a href="#" class="text-blue-500 text-sm">Explore Cloud Firewall</a>
+                </div>
+            </div>
+
+            <!-- Featured Products -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- AI-scale data center -->
+                <div class="flex items-center bg-gray-50 p-6 rounded-lg">
+                    <img src="hp-supporting-story1-hypershield-.jpg" alt="Data Center Dashboard" class="w-1/2">
+                    <div class="w-1/2 pl-6">
+                        <h3 class="font-semibold mb-2">Secure the AI-scale data center</h3>
+                        <p class="text-sm text-gray-600 mb-4">Optimize your infrastructure design to accommodate massive AI/ML workloads while maintaining zero-trust security principles.</p>
+                        <a href="#" class="text-blue-500 text-sm">Register Virtual Event</a>
+                    </div>
+                </div>
+
+                <!-- Splunk Enterprise Security -->
+                <div class="flex items-center bg-gray-50 p-6 rounded-lg">
+                    <div class="w-1/2 pr-6">
+                        <h3 class="font-semibold mb-2">Splunk® Enterprise Security 8.0</h3>
+                        <p class="text-sm text-gray-600 mb-4">Address your security operations with innovations that help threat detection, investigation, and response.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-blue-500 text-sm">Explore Enterprise Security</a>
+                            <a href="#" class="text-blue-500 text-sm">Read announcement</a>
+                        </div>
+                    </div>
+                    <img src="homepage-supporting-story2-splunk.jpg" alt="Splunk Dashboard" class="w-1/2">
+                </div>
+
+                <!-- Cisco Nexus -->
+                <div class="flex items-center bg-gray-50 p-6 rounded-lg">
+                    <img src="homepage-supporting-story3-.jpg" alt="People in Data Center" class="w-1/2">
+                    <div class="w-1/2 pl-6">
+                        <h3 class="font-semibold mb-2">New Cisco Nexus 9000 Series Switches</h3>
+                        <p class="text-sm text-gray-600 mb-4">The latest data center switches support application speed while securing trust.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-blue-500 text-sm">Choose right switches</a>
+                            <a href="#" class="text-blue-500 text-sm">Read announcement</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inside Cisco Section -->
+            <section class="mb-16">
+                <h2 class="text-2xl mb-8">Inside Cisco</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Featured -->
+                    <div>
+                        <h3 class="font-semibold mb-4">Featured</h3>
+                        <p class="text-sm mb-2">Extending AI Into Critical Enterprise Financial Solutions</p>
+                        <a href="#" class="text-blue-500 text-sm">Get the full story</a>
+                    </div>
+
+                    <!-- Partner -->
+                    <div>
+                        <h3 class="font-semibold mb-4">Partner</h3>
+                        <p class="text-sm mb-2">Cisco Unveils New Cisco 000 AI Partner Program</p>
+                        <a href="#" class="text-blue-500 text-sm">Get more details</a>
+                    </div>
+
+                    <!-- Report -->
+                    <div>
+                        <h3 class="font-semibold mb-4">Report</h3>
+                        <p class="text-sm mb-2">Cisco 2024 AI Readiness Index</p>
+                        <a href="#" class="text-blue-500 text-sm">Get the report</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-gray-100 py-8">
+                <div class="container mx-auto px-4">
+                    <!-- Footer Links -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left mb-8">
+                        <div>
+                            <a href="#" class="text-gray-600 hover:text-blue-600">About Cisco</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-gray-600 hover:text-blue-600">Contact Us</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-gray-600 hover:text-blue-600">Careers</a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-gray-600 hover:text-blue-600">Connect with a partner</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Footer Additional Links -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-xs text-gray-600 mb-4">
+                        <a href="#">Feedback</a>
+                        <a href="#">Help</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Cookies / Do not sell or share my personal data</a>
+                        <a href="#">Accessibility</a>
+                        <a href="#">Trademarks</a>
+                        <a href="#">Supply Chain Transparency</a>
+                        <a href="#">Newsroom</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+            
+                    <!-- Social Media Icons -->
+                    <div class="flex justify-center space-x-6 mb-4">
+                        <!-- Facebook Icon -->
+                        <a href="#" class="text-gray-600 hover:text-blue-600">
+                            <img src="icon facebook.png" alt="Facebook Icon" class="w-8 h-8 rounded-full bg-white p-2"> <!-- Facebook Image -->
+                        </a>
+                        
+                        <!-- X (Formerly Twitter) Icon -->
+                        <a href="#" class="text-gray-600 hover:text-blue-600">
+                            <img src="icon-x.jpeg" alt="X Icon" class="w-8 h-8 rounded-full bg-white p-2"> <!-- X Image -->
+                        </a>
+                        
+                        <!-- LinkedIn Icon -->
+                        <a href="#" class="text-gray-600 hover:text-blue-600">
+                            <img src="icon-linkend.png" alt="LinkedIn Icon" class="w-8 h-8 rounded-full bg-white p-2"> <!-- LinkedIn Image -->
+                        </a>
+                        
+                        <!-- Instagram Icon -->
+                        <a href="#" class="text-gray-600 hover:text-blue-600">
+                            <img src="icon- instagram.png" alt="Instagram Icon" class="w-8 h-8 rounded-full bg-white p-2"> <!-- Instagram Image -->
+                        </a>
+                        
+                        <!-- YouTube Icon -->
+                        <a href="#" class="text-gray-600 hover:text-blue-600">
+                            <img src="icon- youtube.png" alt="YouTube Icon" class="w-8 h-8 rounded-full bg-white p-2"> <!-- YouTube Image -->
+                        </a>
+                    </div>
+            
+                    <!-- Footer Bottom Section -->
+                    <div class="flex justify-between items-center border-t pt-4">
+                        <p class="text-xs text-gray-600">© 2024 Cisco Systems, Inc.</p>
+                    </div>
+                </div>
+            </footer>
+            
+            <!-- Add the Font Awesome link for social media icons -->
+            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+            
+            
+            <!-- Add the Font Awesome link for social media icons -->
+            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+            

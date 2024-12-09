@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Student Registration</title>
+    <link rel="icon" type="image/x-icon" href="logo baru.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hero-section {
+            background-color: #0D274D;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0D274D;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #0D274D;
+            box-shadow: 0 0 5px rgba(13, 39, 77, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-gray-800">Student Registration</h1>
+            <nav class="flex space-x-6">
+                <a href="index.html" class="text-gray-700">Home</a>
+                    <a href="biodata.html" class="text-gray-700">Biodata</a>
+                    <a href="contact_us.html" class="text-gray-700">Contact Us</a>
+                    <a href="posts.html" class="text-gray-700">Post</a>
+                    <a href="freepage.html" class="text-gray-700">Video</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold">Formulir Pendaftaran Mahasiswa</h1>
+            <p class="text-lg mt-2">Isi form ini dengan informasi lengkap Anda</p>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="py-8">
+        <div class="form-container">
+            <form id="registrationForm">
+                <!-- Full Name -->
+                <div class="mb-4">
+                    <label for="fullName" class="block font-semibold mb-2">Full Name</label>
+                    <input type="text" id="fullName" class="w-full border-gray-300 rounded-lg p-2" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Student ID -->
+                <div class="mb-4">
+                    <label for="studentId" class="block font-semibold mb-2">Student ID (NIM)</label>
+                    <input type="text" id="studentId" class="w-full border-gray-300 rounded-lg p-2" placeholder="Enter your NIM" required>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-4">
+                    <label for="email" class="block font-semibold mb-2">Email Address</label>
+                    <input type="email" id="email" class="w-full border-gray-300 rounded-lg p-2" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Faculty/Major -->
+                <div class="mb-4">
+                    <label for="faculty" class="block font-semibold mb-2">Faculty/Major</label>
+                    <select id="faculty" class="w-full border-gray-300 rounded-lg p-2" required>
+                        <option value="">Select Faculty</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Business">Business</option>
+                        <option value="Arts">Arts</option>
+                        <option value="Sciences">Sciences</option>
+                    </select>
+                </div>
+
+                <!-- Date of Birth -->
+                <div class="mb-4">
+                    <label for="dob" class="block font-semibold mb-2">Date of Birth</label>
+                    <input type="date" id="dob" class="w-full border-gray-300 rounded-lg p-2" required>
+                </div>
+
+                <!-- Gender -->
+                <div class="mb-4">
+                    <label class="block font-semibold mb-2">Gender</label>
+                    <div class="flex gap-4">
+                        <label class="flex items-center">
+                            <input type="radio" name="gender" value="Male" class="mr-2" required> Male
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="gender" value="Female" class="mr-2" required> Female
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="mb-4">
+                    <label for="address" class="block font-semibold mb-2">Address</label>
+                    <textarea id="address" class="w-full border-gray-300 rounded-lg p-2" rows="4" placeholder="Enter your address" required></textarea>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="mb-4">
+                    <label for="phone" class="block font-semibold mb-2">Phone Number</label>
+                    <input type="text" id="phone" class="w-full border-gray-300 rounded-lg p-2" placeholder="Enter your phone number" required>
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit" class="w-full bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>© 2024 - Harry Stanly Manik</p>
+    </footer>
+
+    <!-- JavaScript Validation -->
+    <script>
+        const form = document.getElementById('registrationForm');
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const fullName = document.getElementById('fullName').value.trim();
+            const studentId = document.getElementById('studentId').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const emailRegex = /^[^@]+@[^@]+\.[^@]+$/;
+            const phoneRegex = /^[0-9]{10,}$/;
+
+            if (!fullName || !studentId || !email || !phone) {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            if (!phoneRegex.test(phone)) {
+                alert('Phone number must be numeric and at least 10 digits long.');
+                return;
+            }
+
+            alert('Registration successful!');
+            form.reset();
+        });
+    </script>
+</body>
+</html>

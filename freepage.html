@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo baru.svg">
+    <title>Free Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        nav a {
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0D274D;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .blog-post {
+            background-color: #f9fafb;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .blog-post h3 {
+            color: #0D274D;
+        }
+
+        .video-section iframe {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-gray-800">Free Page</h1>
+            <nav class="flex space-x-6">
+                <a href="index.html" class="text-gray-700">Home</a>
+                    <a href="biodata.html" class="text-gray-700">Biodata</a>
+                    <a href="contact_us.html" class="text-gray-700">Contact Us</a>
+                    <a href="posts.html" class="text-gray-700">Post</a>
+                    <a href="freepage.html" class="text-gray-700">Video</a>
+            </nav>
+        </div>
+    </header>
+    <section class="bg-gray-800 text-white py-20">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold">Creative video</h1>
+            <p class="text-lg mt-2">happy watching</p>
+        </div>
+    </section>
+    <section class="video-section py-8 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-8">Watch My Latest Video</h2>
+            <div class="flex justify-center">
+                <iframe width="560" height="315" src="WhatsApp Video 2024-12-04 at 19.38.17.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>© 2024 - Harry Stanly Manik</p>
+    </footer>
+</body>
+</html>
